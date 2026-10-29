@@ -6,6 +6,8 @@ export const ContentWrapperStyled = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin: auto;
   }
   h2 {
     font-size: ${theme.fontSize.l};

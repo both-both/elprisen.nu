@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 
-const url = `https://www.elprisenligenu.dk/api/v1/prices/${year}/${month}-${day}_${area}`;
-
 export const useFetch = <T,>(url: string) => {
   const [data, setData] = useState<T | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(true);

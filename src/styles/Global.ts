@@ -19,7 +19,7 @@ body {
 h1{
     font-family: ${(props) => props.theme.font.primary}
 }
-h2, h{
+h2, h3{
     font-family: ${(props) => props.theme.font.primary};
 }
 

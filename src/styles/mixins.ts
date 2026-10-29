@@ -9,7 +9,8 @@ export const resetList = `
 `;
 
 export const resetLink = `
-  text-decoration: none`;
+  text-decoration: none
+  `;
 
 export const resetButton = `
  background: none;
