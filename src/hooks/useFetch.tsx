@@ -8,11 +8,10 @@ export const useFetch = <T,>(url: string) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        setIsLoading(true);
+        setIsLoading(false);
         const response = await fetch(url);
         const json: T = await response.json();
         setData(json);
-        setIsLoading(false);
       } catch {
         setError("Der skete en fejl");
       }

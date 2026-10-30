@@ -16,11 +16,11 @@ export const PriceCircleStyled = styled.div`
 
   h2 {
     font-size: ${theme.fontSize.l};
-    color: ${theme.color.palette.green} margin 4px;
+    color: ${theme.color.palette.green};
   }
-  h2 {
+  h3 {
     font-size: ${theme.fontSize.m};
-    color: ${theme.color.palette.green} margin 4px;
+    color: ${theme.color.palette.green};
   }
 
   &::after {

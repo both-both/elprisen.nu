@@ -1,4 +1,5 @@
 export type InputProps = {
   type: string;
-  value: string;
+  inputValue: string;
+  setInputValue: (inputValue: string) => void;
 };

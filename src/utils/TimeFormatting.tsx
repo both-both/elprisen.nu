@@ -10,3 +10,13 @@ export function timeFormatting(currentTime) {
 
   return { currentTimeStart, currentTimeEnd };
 }
+
+export function historyFormatting(dateByHour) {
+  if (!dateByHour) return { dateByHourStart: "" };
+
+  const dateByHourStart = new Date(dateByHour.time_start)
+    .toLocaleTimeString("da-DK")
+    .substring(0, 5);
+
+  return { dateByHourStart };
+}

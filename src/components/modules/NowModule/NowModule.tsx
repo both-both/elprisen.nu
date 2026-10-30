@@ -2,6 +2,7 @@ import { useFetch } from "../../../hooks/useFetch";
 import { timeFormatting } from "../../../utils/TimeFormatting";
 import { PriceCicle } from "../../elements/PriceCircle/PriceCircle";
 import { ContentWrapper } from "../../layout/ContentWrapper/ContentWrapper";
+import { NowModuleStyled } from "./NowModule.styled";
 import type { NowProps, PriceItem } from "./NowModule.types";
 
 export const NowModule = () => {
@@ -29,18 +30,18 @@ export const NowModule = () => {
     );
   const { currentTimeStart, currentTimeEnd } = timeFormatting(currentTime);
 
-  console.log(currentTimeStart, currentTimeEnd);
-
   return (
-    <ContentWrapper title="Lige nu" heading="Elprisen lige nu">
-      <PriceCicle>
-        <h2>{currentTime?.DKK_per_kWh}</h2> <h3>kr./KWh</h3>
-      </PriceCicle>
-      {
-        <p>
-          {currentTimeStart} - {currentTimeEnd}
-        </p>
-      }
-    </ContentWrapper>
+    <NowModuleStyled>
+      <ContentWrapper title="Lige nu" heading="Elprisen lige nu">
+        <PriceCicle>
+          <h2>{currentTime?.DKK_per_kWh}</h2> <h3>kr./KWh</h3>
+        </PriceCicle>
+        {
+          <p>
+            {currentTimeStart} - {currentTimeEnd}
+          </p>
+        }
+      </ContentWrapper>
+    </NowModuleStyled>
   );
 };

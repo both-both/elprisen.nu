@@ -17,10 +17,18 @@ body {
 }
 
 h1{
-    font-family: ${(props) => props.theme.font.primary}
+    font-family: ${(props) => props.theme.font.primary};
+    font-size: ${theme.fontSize.xl};
 }
 h2, h3{
     font-family: ${(props) => props.theme.font.primary};
+        font-size: ${theme.fontSize.l};
+}
+h2 {
+    font-size: ${theme.fontSize.l};
+}
+h3 {
+    font-size: ${theme.fontSize.m};
 }
 
 img {
